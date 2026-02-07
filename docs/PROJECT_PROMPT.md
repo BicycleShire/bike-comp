@@ -5,9 +5,9 @@
 ## Current Status
 
 **Last updated**: 2026-02-07
-**Current phase**: Phase 1A complete
-**What's done**: Project scaffolded (Next.js 16 + TypeScript + Tailwind + Supabase client). Database migration SQL created (5 tables: standards, compatibility_rules, components, groupsets, measurement_conversions). Seed data written (~30 standards, 18 compatibility rules, 21 measurement conversions). Basic layout with Header/Footer and 3 placeholder routes (compatibility, standards, converter). All pages build and render.
-**What's next**: Phase 1B — interactive compatibility checker UI. Also: set real Supabase credentials in .env.local, run migrations and seed SQL in Supabase SQL Editor.
+**Current phase**: Phases 1A, 1B, and 1C complete
+**What's done**: Project scaffolded (Next.js 16 + TypeScript + Tailwind v4 + Supabase client). Database migration SQL created (5 tables: standards, compatibility_rules, components, groupsets, measurement_conversions). Seed data written (~30 standards, 18 compatibility rules, 21 measurement conversions). Basic layout with Header/Footer. Phase 1B: interactive compatibility checker with category picker, standard picker, and expandable results with caveats/sources. Phase 1C: standards browser with category filter pills, text search (name/description), standards grouped by category, StandardCard showing measurements/aliases/era/region, and "Check compatibility" links. All filter states are bookmarkable URLs via search params.
+**What's next**: Phase 1D — measurement converter UI. Also: set real Supabase credentials in .env.local, run migrations and seed SQL in Supabase SQL Editor.
 **Open questions**: Owner needs to provide Supabase URL and anon key for .env.local
 **Deviations from plan**: None yet
 
