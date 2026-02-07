@@ -1,5 +1,18 @@
 # Bike Part Compatibility Database — Claude Code Project Prompt
 
+> **META: This file lives at `docs/PROJECT_PROMPT.md` in the repo. It is the source of truth for project direction, architecture decisions, and current status. After each working session, update the "Current Status" section below with what was completed, what changed, and what's next. If any architecture decisions change during implementation, update the relevant sections of this document to reflect reality — don't let the prompt drift from the codebase.**
+
+## Current Status
+
+**Last updated**: Not yet started
+**Current phase**: Pre-Phase 1 (project setup)
+**What's done**: Nothing yet — initial prompt created
+**What's next**: Phase 1A — scaffold project, set up Supabase, create schema, seed initial data
+**Open questions**: None yet
+**Deviations from plan**: None yet
+
+---
+
 ## Project Overview
 
 Build a web application that serves as a comprehensive bicycle part compatibility database, with a primary focus on vintage/older bike parts. The app helps users answer the fundamental question: **"Will this part work with my bike?"**
@@ -309,6 +322,38 @@ Clean, utilitarian, reference-tool aesthetic. Not a flashy app — think of it a
 - Mobile app (the web app should work well on mobile first)
 - Multilingual support (bike culture is global)
 - Photo identification — "upload a photo of your BB shell and we'll identify the standard" (AI feature for later)
+
+---
+
+## Local Setup
+
+### Prerequisites
+- Node.js (install from https://nodejs.org — use the LTS version)
+- Git (comes with macOS developer tools)
+- Claude Code CLI (`npm install -g @anthropic-ai/claude-code`)
+- A Supabase account (https://supabase.com — free tier)
+
+### Clone and Run
+```bash
+git clone https://github.com/BicycleShire/bike-comp.git
+cd bike-comp
+npm install
+```
+
+### Environment Variables
+Create a `.env.local` file in the project root (Claude Code can do this for you):
+```
+NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+```
+
+### Running Claude Code
+From inside the repo directory:
+```bash
+cd bike-comp
+claude
+```
+Then tell it: "Read docs/PROJECT_PROMPT.md and start on Phase 1A"
 
 ---
 
